@@ -1,0 +1,13 @@
+server:
+  port: 6000
+#necesaria para que levante o swagger (documentacion) sen problema
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
+  instance:
+    hostname: localhost
